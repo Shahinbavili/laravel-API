@@ -18,10 +18,10 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::where('email' => 'shahinbavili@gmail.com')->first()->id,
-            'title' => $faker->sentence(),
-            'description' => $faker->paragraph(),
-            'image' => $faker->imageUrl(),
+            //'user_id' => User::where('email' => 'shahinbavili@gmail.com')->first()->id,
+            'title' => $this->faker->sentence(),
+            'description' => $this->faker->paragraph(),
+            'image' => $this->faker->imageUrl(),
         ];
     }
 }
